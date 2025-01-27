@@ -1,0 +1,87 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "competitions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dateTime.day",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "dateTime.month",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "dateTime.year",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "dateTime.hour",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "dateTime.minute",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "store_draws",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        {
+          "fieldPath": "drawDateAndTime.day",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "drawDateAndTime.hour",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "drawDateAndTime.month",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "drawDateAndTime.year",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "drawDateAndTime.minute",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "supported_areas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "areaName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "suburbOrTownship.suburbOrTownshipName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "suburbOrTownship.city.cityName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "suburbOrTownship.city.provinceOrState.provinceOrStateName",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "suburbOrTownship.city.provinceOrState.country.countryName",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
